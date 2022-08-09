@@ -1,3 +1,8 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -6,6 +11,7 @@ body{
 .header{
     background-color: #1F2937;
     height: 500px;
+    padding-bottom: 50px;
 }
 
 .hero{
@@ -56,9 +62,11 @@ ul{
     gap: 16px;
 }
 
-button{
+.header .bottom .left button{
     background-color: #3882F6;
     color: white;
+    width: 100px;
+    margin: 10px;
     border: 0px;
     border-radius: 5px;
     padding: 10px;
@@ -69,10 +77,121 @@ button{
 .content-1{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
 }
 
-h3 .content-1{
+h3{
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card{
+    width: 160px;
+    height: 210px;
+}
+
+.card p{
+    width: 150px;
+    height: 55px;
+}
+
+.content-1 .cards .card .border-card{
+    width: 150px;
+    height: 150px;
+    border-radius: 7px;
+    border: 3px solid #3882F6;
+}
+
+.content-2{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.quote p{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    width: 600px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+}
+
+.author{
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blue-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 35px;
+    border-radius: 10px;
+    width: 500px;
+    gap: 30px;
+    color: #E5E7EB;
+}
+
+.right button{
+    background-color: #3882F6;
+    border: 3px solid #E5E7EB;
+    border-radius: 5px;
+    color: #E5E7EB;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.left, .right{
+    display: flex;
+}
+
+.left{
+    flex-direction: column;
+}
+
+.left h4, .left p{
+    margin: 0px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    padding: 30px;
 }
